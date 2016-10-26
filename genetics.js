@@ -17,14 +17,22 @@ truncatedString = mainString.substring(0, m);
  slicedString= mainString.slice(1); 
 }
 
-
-while(slicedString.length >m){
+var i =0;
+while(slicedString.length >m && i<8){
 truncatedString = slicedString.slice(0, m);
 splitString(truncatedString);
 slicedString= slicedString.slice(1); 
+i=i+1;
  }
 
-if(slicedString.length == m) splitStringLast(slicedString);
+
+if(i==8 && slicedString.length>m){
+truncatedString = slicedString.slice(0, m);
+splitStringLast(truncatedString);
+}
+
+else if(slicedString.length == m) splitStringLast(slicedString);
+
 
 } //  end of function run
 
