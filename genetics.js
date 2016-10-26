@@ -4,6 +4,9 @@ var x=10; var y=0;
 var mainString; var truncatedString; var slicedString;
 var m=20;  var n=10;
 
+var resultsString=" ";
+
+
 function run(){ 
  mainString = document.getElementById('inputText').value;
  console.log(mainString);
@@ -33,6 +36,8 @@ splitStringLast(truncatedString);
 
 else if(slicedString.length == m) splitStringLast(slicedString);
 
+output.innerHTML=resultsString;
+google();
 
 } //  end of function run
 
@@ -42,8 +47,13 @@ function splitString(string){
 part2= string.slice(n);
 y=y+10;
 
+resultsString=resultsString+ ' " ' + part1 + "     " +part2 + " \" OR <br \>";;
+
+
+/*
 output.innerHTML= output.innerHTML+ ' " ' + part1 + "     ";
 output.innerHTML= output.innerHTML+part2 + " \" OR <br \>";
+*/
 }
 
 
@@ -52,7 +62,17 @@ function splitStringLast(string){
 part2= string.slice(n);
 y=y+10;
 
+resultsString=resultsString+ ' " ' + part1 + "     " +part2 + " \"  <br \>";;
+/*
 output.innerHTML= output.innerHTML+ ' " ' + part1 + "     ";
 output.innerHTML= output.innerHTML+part2 + " \"  <br \>";
+*/
 }
 
+function google()
+{
+  var str = resultsString;
+str="http://www.google.com/search?hl=en&source=hp&q=" + str + "&aq=f&oq=&aqi=";
+var replaced=str.replace(" ","+");
+window.location.replace(replaced)
+}
