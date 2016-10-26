@@ -47,7 +47,7 @@ function splitString(string){
 part2= string.slice(n);
 y=y+10;
 
-resultsString=resultsString+ ' " ' + part1 + "     " +part2 + " \" OR ";;
+resultsString=resultsString+ ' " ' + part1 + "     " +part2 + " \" OR ";
 
 
 /*
@@ -62,7 +62,7 @@ function splitStringLast(string){
 part2= string.slice(n);
 y=y+10;
 
-resultsString=resultsString+ ' " ' + part1 + "     " +part2 + " \" ";;
+resultsString=resultsString+ ' " ' + part1 + "     " +part2 + " \" ";
 /*
 output.innerHTML= output.innerHTML+ ' " ' + part1 + "     ";
 output.innerHTML= output.innerHTML+part2 + " \" ";
