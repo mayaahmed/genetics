@@ -47,12 +47,12 @@ function splitString(string){
 part2= string.slice(n);
 y=y+10;
 
-resultsString=resultsString+ ' " ' + part1 + "     " +part2 + " \" OR <br \>";;
+resultsString=resultsString+ ' " ' + part1 + "     " +part2 + " \" OR ";;
 
 
 /*
 output.innerHTML= output.innerHTML+ ' " ' + part1 + "     ";
-output.innerHTML= output.innerHTML+part2 + " \" OR <br \>";
+output.innerHTML= output.innerHTML+part2 + " \" OR ";
 */
 }
 
@@ -62,10 +62,10 @@ function splitStringLast(string){
 part2= string.slice(n);
 y=y+10;
 
-resultsString=resultsString+ ' " ' + part1 + "     " +part2 + " \"  <br \>";;
+resultsString=resultsString+ ' " ' + part1 + "     " +part2 + " \" ";;
 /*
 output.innerHTML= output.innerHTML+ ' " ' + part1 + "     ";
-output.innerHTML= output.innerHTML+part2 + " \"  <br \>";
+output.innerHTML= output.innerHTML+part2 + " \" ";
 */
 }
 
