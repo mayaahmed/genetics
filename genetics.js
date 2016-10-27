@@ -1,5 +1,5 @@
 
-var output= document.getElementById('outputDiv'); 
+
 var x=10; var y=0;
 var mainString; var truncatedString; var slicedString;
 var m=20;  var n=10;
@@ -35,8 +35,6 @@ splitStringLast(truncatedString);
 }
 
 else if(slicedString.length == m) splitStringLast(slicedString);
-
-output.innerHTML=resultsString;
 google();
 
 } //  end of function run
