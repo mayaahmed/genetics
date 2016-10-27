@@ -61,16 +61,14 @@ part2= string.slice(n);
 y=y+10;
 
 resultsString=resultsString+ ' " ' + part1 + "     " +part2 + " \" ";
-/*
-output.innerHTML= output.innerHTML+ ' " ' + part1 + "     ";
-output.innerHTML= output.innerHTML+part2 + " \" ";
-*/
 }
 
 function google()
 {
   var str = resultsString;
 str="http://www.google.com/search?hl=en&source=hp&q=" + str + "&aq=f&oq=&aqi=";
-var replaced=str.replace(" ","+");
-window.location.replace(replaced)
+
+var win = window.open(str, '_blank');
+  win.focus();
+  
 }
