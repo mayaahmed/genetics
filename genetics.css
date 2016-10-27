@@ -2,18 +2,27 @@ body{
 background: black;
 }
 
-#outputDiv{
-position: absolute;
-background: khaki;
-// color: white;
-font-size: 20px;
-opacity:0.7;
+#inputDiv{
+background: #FFFFCC;
+padding: 20px;
+font: 22px Ariana;
+opacity: 0.8;
 width: 100%;
+min-height: 200px;
+text-align: center;
 }
 
 
+p{
+padding: 15px;
+opacity: 0.8;
+}
 
 
+p:hover{
+opacity: 1;
+font-size: 23px;
+}
 
 #input{
 width: 60px;
